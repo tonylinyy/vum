@@ -66,13 +66,12 @@ const routes = [
 
 let router = new Router(routes)
 
-// let app = Vue.extend()
-
-// const demo = new Vue({
-//   el: '#app',
-//   router: router,
-//   render: v => v(app)
-// })
+const demo = new Vue({
+  el: '#app',
+  router: router,
+  render: v => v(Index)
+})
+console.log(demo)
 
 Vum.router(router)
 
