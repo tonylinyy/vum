@@ -3,7 +3,7 @@
     <form class="search-outer">
       <div class="search-inner">
         <i class="icon icon-search"></i>
-        <input type="search" class="search-input" id="search-input" placeholder="{{searchText}}" v-model="input" @blur="blur()">
+        <input type="search" class="search-input" id="search-input" :placeholder="searchText" v-model="input" @blur="blur()">
         <a href="javascript:" class="icon icon-clear" id="search-clear" @click="clear()"></a>
       </div>
       <label for="search-input" class="search-text" id="search-text">

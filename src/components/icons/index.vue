@@ -1,18 +1,18 @@
 <template>
-  <span class="icon icon-{{icon}}"></span>
+  <span class="icon" :class="'icon-'+icon"></span>
 </template>
 
 <script>
-export default {
-  props: {
-    icon: {
-      type: String,
-      required: true
+  export default {
+    props: {
+      icon: {
+        type: String,
+        required: true
+      }
     }
   }
-}
 </script>
 
 <style lang="less">
-@import 'icons.less';
+  @import 'icons.less';
 </style>
